@@ -106,7 +106,7 @@ int fila_vazia(fila *f){
     if(f->inicio==NULL){
         return 1; //fila vazia
     }else{
-        return 0; //fila não está vazia
+        return 0; //fila nÃ£o estÃ¡ vazia
     }
 }
 
@@ -139,13 +139,13 @@ int remove_fila(fila *f){
 
   aux=f->inicio; //aux aponta para o inicio da fila
 
-  valor = aux->dado; //guardando o valor na variável
+  valor = aux->dado; //guardando o valor na variÃ¡vel
 
   f->inicio = aux->prox; //ajustando o ponteiro do inicio
 
   aux->prox = NULL;
 
-  if(f->inicio==NULL){ //verifico se existe um só elemento
+  if(f->inicio==NULL){ //verifico se existe um sÃ³ elemento
     f->fim=NULL;
     free(aux);
   }else{
